@@ -3,7 +3,7 @@ package binarysearch;
 public class binarysearch {
 	//returns index of target in array, if target is not present in array returns -1
 	public int binarySearch(Comparable array[],Comparable target, int min, int max){
-		int midPoint = (min + max)/2;
+		int midPoint = (min + max)/2; //floors deliberately
 		int comp = target.compareTo(midPoint);
 		if(min == max || midPoint < min){
 			if(comp == 0)
